@@ -11,7 +11,7 @@ module.exports = {
       titleTemplate: "%s · I said No 2020",
       description:
         "A silly cat who has been grumpy all year 2020",
-      url: "https://www.doe.com", // No trailing slash allowed!
+      url: "https://isaidno.netlify.app/", // No trailing slash allowed!
       image: "/images/grumpy.png", // Path to your image you placed in the 'static' folder
       twitterUsername: "@bolaji_xi",
     },
