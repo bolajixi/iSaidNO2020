@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: "Bitter", serif;
+  color: #05386b;
+  background: #85dcba;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.switch {
+  position: relative;
+  display: block;
+  width: 90px;
+  height: 55px;
+  margin-bottom: 20px;
+  transform: scale(4);
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  transition: 0.5s;
+  border: 3px solid black;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  bottom: 14px;
+  top: 8px;
+  background-color: black;
+  transition: 0.5s;
+}
+
+.switch input {
+  display: none;
+}
+
+input:checked + .slider {
+  background-color: black;
+}
+
+input:checked + .slider::before {
+  transform: translateX(47px) rotateZ(45deg);
+  background: yellow;
+}
+
+.slider.round {
+  border-radius: 35px;
+}
+
+.slider.round::before {
+  width: 43%;
+  height: 43%;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  transform: rotateZ(-45deg);
+}
+
+.catpaw-image {
+  margin-left: -75px;
+  width: auto;
+  max-height: 50%;
+  position: relative;
+  /* height: 50%;
+  width: 10%; */
+  transform: rotate(180deg);
+}
+.catpaw-container {
+  height: 80rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(5%, -110%);
+  transition: transform 0.6s;
+}
+.catpaw-extended {
+  transform: translate(5%, -55%);
+}
+.typograph {
+  font-family: "Monoton", cursive;
+  font-style: italic;
+  font-family: "Monoton", cursive;
+  font-size: 9em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  line-height: 0;
+}
+.grump-story {
+  margin-top: 6%;
+  color: white;
+  max-width: 600px;
+  position: absolute;
+  font-weight: bolder;
+  font-size: 3rem;
+}
+
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.85); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer;
+}
+#text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 100%;
+  color: white;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+a.twitter {
+  color: #49a1eb;
+}
+
+a.linkedin {
+  color: #0e76a8;
+}
+
+a.github {
+  color: #171515;
+}
+a.instagram {
+  color: black;
+}
+.social-container {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  text-align: center;
+  padding: 25px 50px;
+  background-color: white;
+}
+
+a.social {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+a.social:hover {
+  transform: translateY(-2px);
+}
+.fof {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.fof h1 {
+  font-size: 50px;
+  display: inline-block;
+  padding-right: 12px;
+  animation: type 0.5s alternate infinite;
+}
+@keyframes type {
+  from {
+    box-shadow: inset -3px 0px 0px white;
+  }
+  to {
+    box-shadow: inset -3px 0px 0px transparent;
+  }
+}
