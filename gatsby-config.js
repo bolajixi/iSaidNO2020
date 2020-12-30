@@ -27,14 +27,15 @@ module.exports = {
         background_color: '#f7f0eb',
         theme_color: '#a2466c',
         display: 'standalone',
-        icons: [
-          {
-            "src": "src/images/grumpy.png",
-            "sizes": "144x144",
-            "type": "image/png",
-            "purpose": "any maskable"
-          }
-        ]
+        icon: "src/images/grumpy.png",
+        // icons: [
+        //   {
+        //     "src": "/images/grumpy.png",
+        //     "sizes": "144x144",
+        //     "type": "image/png",
+        //     "purpose": "any maskable"
+        //   }
+        // ]
       },
     },
     `gatsby-plugin-offline`,
