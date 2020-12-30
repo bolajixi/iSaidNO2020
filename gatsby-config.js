@@ -18,12 +18,6 @@ module.exports = {
   plugins: [
     `gatsby-plugin-styled-components`,
     {
-      resolve: "gatsby-plugin-load-script",
-      options: {
-        src: "/script.js", // Change to the script filename
-      },
-    },
-    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: 'I said No 2020',
