@@ -113,7 +113,7 @@ input:checked + .slider::before {
   font-size: 3rem; */
   margin-top: 5%;
   display: inline-block;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   max-width: 75%;
   max-height: 75%;
 }
