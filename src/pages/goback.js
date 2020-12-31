@@ -32,23 +32,27 @@ const goback = () => {
           <p>GRUMPY GRUMPY</p>
           <p>GRUMPY GRUMPY</p>
         </div>
-        <img src="../../grumpy-cat-meme-00.jpg" alt="grumpy"/>
-        <div className="grump-story">
-          So you see, today's meant to be a wonderful, day but nothing is right <span role="img" aria-label="sad">😓</span>...
-          <br></br>
-          <br></br>
-          You don't know what I've gone through this year and here you are clicking my toggle 4 times.
-          <br></br>
-          <br></br>
-          What a wonderful day to be grumpy
-          <br></br>
-          <br></br>
-          <Link to="/">Let's go back and try again</Link>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-      </div>
+        <div id="wrap">
+          <div className="container">
+            <img src="../../grumpy-cat-meme-00.jpg" alt="grumpy"/>
+          </div>
+          <div className="container" id='grump-text'>
+            So you see, today's meant to be a wonderful, day but nothing is right <span role="img" aria-label="sad">😓</span>...
+            <br></br>
+            <br></br>
+            You don't know what I've gone through this year and here you are clicking my toggle 4 times.
+            <br></br>
+            <br></br>
+            What a wonderful day to be grumpy
+            <br></br>
+            <br></br>
+            <Link to="/">Let's go back and try again</Link>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+          </div>
+        </div>
       </Layout>
     </>
   )
