@@ -2,8 +2,11 @@ import React from "react"
 import Bubble from "../components/bubble"
 import Layout from "../components/layout"
 import { Helmet } from "react-helmet"
+import { useWindowSize } from 'react-use'
+import Confetti from 'react-confetti'
 
 const index = () => {
+  const { width, height } = useWindowSize
   var handToggled = false
   var timeOut
   var counter = 0
@@ -84,6 +87,10 @@ const index = () => {
             <p>That's what I'm craving again to not be grumpy. Freedom from COVID is everything.
               What a year it has been<span role="img" aria-label="relieved face">😌</span>.</p>
           </div>
+          <Confetti
+            width={width}
+            height={height}
+          />
         </div>
         <div>
           <label style={{ margin: "auto"}} className="switch"> 
