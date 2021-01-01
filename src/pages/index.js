@@ -101,7 +101,7 @@ const index = () => {
         <div className="catpaw-container">
           <img className="catpaw-image" alt="myImage" src="../../catpaw.png"/>
         </div>
-        <h1 style={{ textAlign: "center", marginTop: "115px" }}>I know you want to</h1>
+        <h1 style={{ textAlign: "center", marginTop: "115px" }}>What do you think</h1>
       </Layout>
       <Bubble BubbleText='Please can you not push my ' TextBold="Toggle!!!" id="mybubble"></Bubble>
     </>
