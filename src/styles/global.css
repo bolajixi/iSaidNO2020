@@ -9,6 +9,7 @@ html {
 
 body {
   font-family: "Bitter", serif;
+  font-display: swap;
   color: #05386b;
   background: #85dcba;
   display: grid;
@@ -95,7 +96,7 @@ input:checked + .slider::before {
 .typograph {
   font-family: "Monoton", cursive;
   font-style: italic;
-  font-family: "Monoton", cursive;
+  font-display: swap;
   font-size: 9em;
   position: absolute;
   top: 0;
